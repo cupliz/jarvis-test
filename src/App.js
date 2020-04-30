@@ -16,6 +16,10 @@ const pictures = [
   "https://image.flaticon.com/icons/svg/206/206865.svg",
   "https://image.flaticon.com/icons/svg/206/206877.svg",
   "https://image.flaticon.com/icons/svg/206/206880.svg",
+  "https://image.flaticon.com/icons/svg/306/306009.svg",
+  "https://image.flaticon.com/icons/svg/305/305974.svg",
+  "https://image.flaticon.com/icons/svg/305/305978.svg",
+  "https://image.flaticon.com/icons/svg/305/305994.svg",
 ]
 export default () => {
   const [images, setImages] = useState(pictures)
@@ -49,33 +53,44 @@ export default () => {
     }
   }
   return (
-    <div className="container">
-      <div className="row mt-4 mb-4">
-        <div className="col-6">
-          <button className={`btn btn-${type === 'replace' ? 'primary' : 'secondary'} btn-sm btn-block`}
-            onClick={() => setType('replace')}>Replace</button>
+
+    <div>
+      <nav className="navbar navbar-expand-lg navbar-light bg-primary">
+        <div className="container text-center">
+          In light of the Coronavirus pandemic, we are providing full disinfection cleans to all clients at no added charge.
+          See everything we’re doing to keep our communities safe here
         </div>
-        <div className="col-6">
-          <button className={`btn btn-${type === 'swap' ? 'primary' : 'secondary'} btn-sm btn-block`}
-            onClick={() => setType('swap')}>Swap</button>
+      </nav>
+      <div className="container">
+        <div className="row mt-4 mb-4">
+          <div className="col-6">
+            <button className={`btn btn-${type === 'replace' ? 'primary' : 'secondary'} btn-md btn-block`}
+              onClick={() => setType('replace')}>Replace</button>
+          </div>
+          <div className="col-6">
+            <button className={`btn btn-${type === 'swap' ? 'primary' : 'secondary'} btn-md btn-block`}
+              onClick={() => setType('swap')}>Swap</button>
+          </div>
+        </div>
+        <div className="row">
+          {
+            images.map((img, i) => {
+              return <div key={i} className="col-3 box" >
+                <img
+                  className="img-fluid"
+                  src={img}
+                  ref={refs.current[i]}
+                  draggable="true"
+                  onDragStart={e => drag(i, e)}
+                  onDragOver={e => allowDrop(e)}
+                  onDrop={e => drop(i, e)}
+                  alt=""
+                />
+              </div>
+            })
+          }
         </div>
       </div>
-      {
-        images.map((img, i) => {
-          return <div key={i} className="col-4" >
-            <img
-              className="img-fuild"
-              src={img}
-              ref={refs.current[i]}
-              draggable="true"
-              onDragStart={e => drag(i, e)}
-              onDragOver={e => allowDrop(e)}
-              onDrop={e => drop(i, e)}
-              alt=""
-            />
-          </div>
-        })
-      }
     </div>
   )
 }
