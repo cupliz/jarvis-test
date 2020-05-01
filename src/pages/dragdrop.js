@@ -8,9 +8,9 @@ Instructions:
 
 Extra points for: clear code, styles and creativity, animations, tests, custom CSS
 */
-import React, { useState, useRef, createRef } from 'react'
-import './App.css'
 
+import React, { useState, useRef, createRef } from 'react'
+import './test.css'
 const pictures = [
   "https://image.flaticon.com/icons/svg/206/206898.svg",
   "https://image.flaticon.com/icons/svg/206/206865.svg",

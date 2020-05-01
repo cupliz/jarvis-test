@@ -1,0 +1,121 @@
+body,
+* {
+  font-family: 'Nunito', sans-serif;
+}
+.brand {
+  padding: 0 16px !important;
+  color: #00a399 !important;
+  font-family: 'AdobeHebrew-Regular' !important;
+  font-size: 30px !important;
+}
+.secondary.menu > a:hover {
+  color: #00a399 !important;
+}
+
+.teal {
+  color: #00a399;
+}
+.orange {
+  color: #e59900;
+}
+.container.content {
+  padding: 100px 0 !important;
+  min-height: 79vh;
+}
+.header a {
+  cursor: pointer;
+  color: #00a399;
+}
+.header a:hover {
+  color: #e59900;
+  transition: all 0.2s linear 0s;
+}
+.read-more {
+  margin-bottom: 10px !important;
+}
+.button.teal {
+  background-color: #00a399;
+  color: #fff;
+}
+.button:hover {
+  background-color: #e59900 !important;
+}
+.button:focus {
+  transition: all 0.3s linear 0s;
+}
+.item {
+  border: none !important;
+}
+.news-image {
+  filter: brightness(50%);
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+}
+.news-image:hover {
+  filter: brightness(100%);
+  transition: all 0.3s ease-in 0s;
+}
+.sidebar {
+  margin-top: 0 !important;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+/* friends */
+.modal {
+  transition: all ease 1s;
+  background-color: transparent !important;
+}
+img {
+  background-color: #fff;
+}
+.card.user {
+  padding: 10px;
+}
+.card.user:hover {
+  background-color: #00a399 !important;
+  filter: opacity(80%);
+}
+.card.user:hover img {
+  background-color: #00a399;
+}
+.card.user:hover span {
+  color: #fff !important;
+}
+.modal .header {
+  padding-top: 2rem !important;
+
+  background: #e59900 !important;
+  width: 100%;
+  background-image: linear-gradient(90deg, #00a399 15px, transparent 0),
+    linear-gradient(90deg, #e56000 37px, transparent 0),
+    linear-gradient(90deg, #0084a3 27px, transparent 0) !important;
+
+  background-size: 31px 100%, 75px 100%, 57px 100% !important;
+}
+.modal .header > h3 {
+  padding-left: 12rem !important;
+  color: #fff;
+}
+.modal .header img {
+  padding: 3px;
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+  top: -2rem;
+  background-color: #fff;
+  position: absolute;
+  margin-bottom: 100px !important;
+}
+.modal .content {
+  margin-top: 2rem;
+  padding-top: 2.5rem !important;
+}
+@media only screen and (max-width: 767px) {
+  .modal .header img {
+    top: -1rem;
+  }
+  .ui.modal > .content {
+    display: block;
+    padding-top: 4rem !important;
+  }
+}

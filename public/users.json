@@ -1,0 +1,65 @@
+[
+  {
+    "balance": "$3,946.45",
+    "age": 23,
+    "name": "Bird Ramsey",
+    "gender": "male",
+    "company": "NIMON",
+    "email": "birdramsey@nimon.com",
+    "photo": "https://image.flaticon.com/icons/svg/206/206898.svg"
+  },
+  {
+    "balance": "$2,499.49",
+    "age": 31,
+    "name": "Lillian Burgess",
+    "gender": "female",
+    "company": "LUXURIA",
+    "email": "lillianburgess@luxuria.com",
+    "photo": "https://image.flaticon.com/icons/svg/206/206865.svg"
+  },
+  {
+    "balance": "$2,820.18",
+    "age": 34,
+    "name": "Kristie Cole",
+    "gender": "female",
+    "company": "QUADEEBO",
+    "email": "kristiecole@quadeebo.com",
+    "photo": "https://image.flaticon.com/icons/svg/206/206877.svg"
+  },
+  {
+    "balance": "$3,277.32",
+    "age": 30,
+    "name": "Leonor Cross",
+    "gender": "female",
+    "company": "GRONK",
+    "email": "leonorcross@gronk.com",
+    "photo": "https://image.flaticon.com/icons/svg/206/206880.svg"
+  },
+  {
+    "balance": "$1,972.47",
+    "age": 28,
+    "name": "Marsh Mccall",
+    "gender": "male",
+    "company": "ULTRIMAX",
+    "email": "marshmccall@ultrimax.com",
+    "photo": "https://image.flaticon.com/icons/svg/306/306009.svg"
+  },
+  {
+    "balance": "$2,872.27",
+    "age": 29,
+    "name": "Fernando Kelly",
+    "gender": "male",
+    "company": "SAJU",
+    "email": "fernando.kelly@example.com",
+    "photo": "https://image.flaticon.com/icons/svg/305/305974.svg"
+  },
+  {
+    "balance": "$2,872.27",
+    "age": 26,
+    "name": "Brad Gibson",
+    "gender": "male",
+    "company": "Thornridge",
+    "email": "brad.gibson@example.com",
+    "photo": "https://image.flaticon.com/icons/svg/305/305974.svg"
+  }
+]
