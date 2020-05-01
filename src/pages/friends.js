@@ -35,11 +35,8 @@ for (let i = 0; i < users.length; i++) {
   }
 }
 export default () => {
-  const [detail, setDetail] = useState(users[3])
+  const [detail, setDetail] = useState({})
   useEffect(() => { }, [])
-  if (detail.id) {
-    console.log(Object.keys(detail.address))
-  }
   return (
     <div className="ui container content">
       {detail.id &&

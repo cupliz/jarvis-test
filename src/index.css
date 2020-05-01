@@ -30,9 +30,6 @@ body,
   color: #e59900;
   transition: all 0.2s linear 0s;
 }
-.read-more {
-  margin-bottom: 10px !important;
-}
 .button.teal {
   background-color: #00a399;
   color: #fff;
@@ -46,6 +43,19 @@ body,
 .item {
   border: none !important;
 }
+
+article > p {
+  transition: all 2s ease-out;
+  margin-bottom: 4px;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+article > p.visible {
+  opacity: 1;
+  height: auto;
+}
+
 .news-image {
   filter: brightness(50%);
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
